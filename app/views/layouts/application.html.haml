@@ -16,4 +16,6 @@
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
   %body
+    = render 'layouts/header'
+    = render 'layouts/flash'
     = yield
