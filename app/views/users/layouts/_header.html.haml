@@ -1,0 +1,9 @@
+%nav.navbar.navbar-expand-lg.navbar-light.border-bottom.mb-4.justify-content-md-between
+  .container
+    = link_to "仕事管理ツール", users_root_path
+    %ul.nav.nav-pills
+      - if user_signed_in?
+        %li.nav-item
+          = button_to "ログアウト", destroy_user_session_path,
+                                  method: :delete,
+                                  class: 'nav-link text-danger'
