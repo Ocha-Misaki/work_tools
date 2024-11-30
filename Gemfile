@@ -7,6 +7,8 @@ gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise'
 gem 'dotenv-rails'
+gem 'google-apis-calendar_v3'
+gem 'googleauth'
 gem 'haml-rails'
 gem 'httparty'
 gem 'jbuilder'

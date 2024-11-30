@@ -39,3 +39,4 @@
 /node_modules
 
 /config/credentials/development.key
+/config/credentials/hackathon20241130-e157686be65f.json

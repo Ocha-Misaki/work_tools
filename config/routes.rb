@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resources :groups do
       resource :invitation, only: :create
     end
+    resource :summary, only: %i[create]
   end
 end
