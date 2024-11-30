@@ -6,10 +6,13 @@ gem 'rails', '8.0.0'
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'devise'
+gem 'dotenv-rails'
 gem 'haml-rails'
+gem 'httparty'
 gem 'jbuilder'
 gem 'jsbundling-rails'
 gem 'kamal', require: false
+gem 'ruby-openai'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
