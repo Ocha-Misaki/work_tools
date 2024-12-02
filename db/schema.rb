@@ -48,6 +48,7 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_02_102219) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "title", default: "", null: false
+    t.text "content", default: "", null: false
     t.bigint "parent_task_id"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
