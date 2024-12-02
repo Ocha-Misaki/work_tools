@@ -4,6 +4,14 @@
     %ul.nav.nav-pills
       - if user_signed_in?
         %li.nav-item
+          = link_to '所属グループ一覧', users_groups_path, class: 'nav-link'
+        %li.nav-item
+          = link_to 'タスク一覧', users_tasks_path, class: 'nav-link'
+        %li.nav-item
+          = link_to '日報一覧', users_daily_reports_path, class: 'nav-link'
+          %li.nav-item
+          = link_to 'ふりかえり一覧', users_reflections_path, class: 'nav-link'
+        %li.nav-item
           = button_to "ログアウト", destroy_user_session_path,
                                   method: :delete,
                                   class: 'nav-link text-danger'
