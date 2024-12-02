@@ -1,2 +1,10 @@
 .container
   .fs-5 ユーザー用home画面
+  = turbo_frame_tag 'summary' do
+    .mt-3
+      = button_to '今日のサマリーをもらう', users_summary_path,
+                                        class: 'btn btn-outline-primary',
+                                        method: :post,
+                                        data: { turbo_frame: 'content' }
+  = turbo_frame_tag 'summary' do
+    .fs-6.fw-bold{ data: { turbo_frame: 'content' } }= session[:summary]
