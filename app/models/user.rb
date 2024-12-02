@@ -3,6 +3,9 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: %i[google_oauth2]
   validates :uid, uniqueness: { scope: :provider }
   has_many :affiliated_group, dependent: :destroy
+  has_many :tasks, dependent: :destroy
+  has_many :daily_reports, dependent: :destroy
+  has_many :reflections, dependent: :destroy
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
